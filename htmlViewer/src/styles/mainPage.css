@@ -1,0 +1,136 @@
+/* General Container */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Card Panels */
+.panel {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Top Section Layout */
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+/* Buttons container */
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.btn {
+  background-color: #007bff;
+  border: none;
+  padding: 6px 14px;
+  margin-left: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Copy message */
+.copy-msg {
+  color: green;
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+
+/* Responsive: stack panels on smaller screens */
+@media (max-width: 768px) {
+  .top-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Textarea */
+.textarea {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 300px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  font-size: 14px;
+  font-family: monospace;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* Preview Box */
+.preview-box {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 300px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+  overflow: auto;
+}
+
+/* Syntax Highlighted Code */
+.code-block {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow: auto;
+  font-size: 14px;
+  font-family: monospace;
+  line-height: 1.5;
+}
+
+/* Bottom Section */
+.bottom-section {
+  margin-top: 20px;
+}
